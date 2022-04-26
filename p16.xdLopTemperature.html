@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    class Temperature {
+        temperC;
+            constructor(temperC) {
+                this.temperC = temperC;
+            }
+            temperCtoTemperF(){
+                if(this.temperC > -273){
+                    let temperF = this.temperC * 9/5 + 32;
+                    alert("Độ F là: " + temperF );
+                }
+            }
+            temperCtoTemperK(){
+                if(this.temperC > -273){
+                    let temperK = this.temperC + 273.15;
+                    alert("Độ K là: " + temperK);
+                }
+            }
+    }
+    let temperature = new Temperature(25);
+    temperature.temperCtoTemperF();
+    temperature.temperCtoTemperK();
+</script>
